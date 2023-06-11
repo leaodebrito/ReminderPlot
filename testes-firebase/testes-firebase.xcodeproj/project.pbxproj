@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C122B6C72A366EF3000B9BF4 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C122B6C62A366EF3000B9BF4 /* SplashView.swift */; };
 		C13D7AC52A354CFE0041773B /* testes_firebaseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D7AC42A354CFE0041773B /* testes_firebaseApp.swift */; };
 		C13D7AC72A354CFE0041773B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C13D7AC62A354CFE0041773B /* ContentView.swift */; };
 		C13D7AC92A354CFF0041773B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C13D7AC82A354CFF0041773B /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C122B6C62A366EF3000B9BF4 /* SplashView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		C13D7AC12A354CFE0041773B /* testes-firebase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "testes-firebase.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C13D7AC42A354CFE0041773B /* testes_firebaseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testes_firebaseApp.swift; sourceTree = "<group>"; };
 		C13D7AC62A354CFE0041773B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,18 +99,19 @@
 		C13D7AC32A354CFE0041773B /* testes-firebase */ = {
 			isa = PBXGroup;
 			children = (
-				C122B6C52A3668D0000B9BF4 /* Splash Screen */,
-				C14D59F22A36630F005F6992 /* Info.plist */,
 				C13D7AC42A354CFE0041773B /* testes_firebaseApp.swift */,
+				C13D7AF02A354EAD0041773B /* Modelos */,
+				C122B6C52A3668D0000B9BF4 /* Splash Screen */,
+				C122B6C62A366EF3000B9BF4 /* SplashView.swift */,
 				C13D7AEC2A354DF70041773B /* TabView.swift */,
 				C13D7AEE2A354EA00041773B /* ListaDeTarefas.swift */,
 				C13D7AF12A354EE00041773B /* Charts.swift */,
 				C13D7AF32A35543B0041773B /* Login.swift */,
 				C13D7AF92A355EDB0041773B /* NovaTarefa.swift */,
-				C13D7AF02A354EAD0041773B /* Modelos */,
 				C13D7AC82A354CFF0041773B /* Assets.xcassets */,
 				C13D7AC62A354CFE0041773B /* ContentView.swift */,
 				C13D7ACD2A354CFF0041773B /* Item.swift */,
+				C14D59F22A36630F005F6992 /* Info.plist */,
 				C13D7AF52A35598A0041773B /* GoogleService-Info.plist */,
 				C13D7ACA2A354CFF0041773B /* Preview Content */,
 			);
@@ -226,6 +229,7 @@
 				C13D7AEF2A354EA00041773B /* ListaDeTarefas.swift in Sources */,
 				C13D7AED2A354DF70041773B /* TabView.swift in Sources */,
 				C13D7AF22A354EE00041773B /* Charts.swift in Sources */,
+				C122B6C72A366EF3000B9BF4 /* SplashView.swift in Sources */,
 				C13D7AF82A355A6B0041773B /* Tarefas.swift in Sources */,
 				C13D7AC52A354CFE0041773B /* testes_firebaseApp.swift in Sources */,
 			);
