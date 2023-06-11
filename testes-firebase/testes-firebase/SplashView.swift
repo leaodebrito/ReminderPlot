@@ -16,30 +16,45 @@ struct SplashView: View {
                     // 2.
                     if self.isActive {
                         // 3.
-                        MotherView()
+                        tabview()
                     } else {
                         // 4.
-                        VStack{
-                            Spacer()
+                        ZStack{
+                            Rectangle()
+                                .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/)
+                                .foregroundColor(.black)
+                                .ignoresSafeArea()
                             
-                            Image("SplashView_1")
-                                .resizable()
-                                .aspectRatio(contentMode: .fit)
-                                .frame(width: 200, height: 200, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            
-                            Spacer()
-                            
-                            Text("ConstruBud")
-                                .bold()
-                                .font(.title)
-                            Text(versao)
+                            VStack{
+                                
+                                Spacer()
+                                
+                                Image("logo")
+                                    .resizable()
+                                    .aspectRatio(contentMode: .fit)
+                                    .frame(width: 400, height: 400, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                
+                                Spacer()
+                                
+                                
+                                
+                                Text("Reminder Plot")
+                                    .bold()
+                                    .font(.title)
+                                    .foregroundColor(.white)
+                                Text(versao)
+                                    .foregroundColor(.white)
+                                
+                            }
                         }
+                        
                     }
-                }
+        }
+       
                 // 5.
                 .onAppear {
                     // 6.
-                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
                         // 7.
                         withAnimation {
                             self.isActive = true

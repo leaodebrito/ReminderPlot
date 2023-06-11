@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-
+let versao = "2023.05-0"
 
 struct tabview: View {
     @Environment(\.modelContext) private var modelContext

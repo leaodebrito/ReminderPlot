@@ -23,7 +23,7 @@ struct testes_firebaseApp: App {
 
     var body: some Scene {
         WindowGroup {
-            tabview()
+            SplashView()
                 .modelContainer(for: Tarefa.self)
         }
     }
