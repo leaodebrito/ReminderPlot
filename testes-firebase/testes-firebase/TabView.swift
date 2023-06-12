@@ -13,6 +13,8 @@ let versao = "2023.05-0"
 struct tabview: View {
     @Environment(\.modelContext) private var modelContext
     
+    
+    
 
     
     var body: some View {
@@ -31,9 +33,10 @@ struct tabview: View {
                         icon: { Image(systemName: "chart.bar") }
                     )
                 }
-            
         }
+        
     }
+        
 }
 
 #Preview {

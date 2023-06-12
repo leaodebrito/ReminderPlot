@@ -14,6 +14,9 @@ struct ListaDeTarefas: View {
     
     @State var showSheetView: Bool = false
     
+    @State var loginStatus: Bool = true
+    @AppStorage("notLoginYet") var isParameterTrue: Bool = true
+    
     var body: some View {
         NavigationView {
             List {
@@ -38,9 +41,9 @@ struct ListaDeTarefas: View {
 
                 }
             }
-            .sheet(isPresented: $showSheetView, content: {
-                NovaTarefa()
-            })
+            .onAppear{if isParameterTrue{loginStatus = true}}
+            .sheet(isPresented: $loginStatus, content: {Login()})
+            .sheet(isPresented: $showSheetView, content: {NovaTarefa()})
             .navigationTitle("Lista de Tarefas")
         }
     }
